@@ -2,9 +2,11 @@ package com.company;
 
 public interface IAccount {
 
-    void withdraw(double valor);
+    void withdraw(double value);
 
-    void deposit(double valor);
+    void deposit(double value);
 
-    void transfer(double valor, Account destinedAccount);
+    void transfer(double value, Account destinedAccount);
+
+    void bankStatement();
 }
