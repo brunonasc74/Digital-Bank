@@ -2,9 +2,18 @@ package com.company;
 
 public abstract class Account implements IAccount{
 
+    private static int DEFAULT_AGENCY = 1;
+    private static int SEQUENTIAL = 1;
+
     private int agency;
     private int number;
     private double balance;
+
+    public Account(){
+
+        this.agency = DEFAULT_AGENCY;
+        this.number = SEQUENTIAL;
+    }
 
     @Override
     public void withdraw(double valor) {
