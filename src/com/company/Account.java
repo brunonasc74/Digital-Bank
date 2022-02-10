@@ -51,6 +51,6 @@ public abstract class Account implements IAccount{
         System.out.println(String.format("User: %s", this.client.getName()));
         System.out.println(String.format("Agency: %d", this.agency));
         System.out.println(String.format("Number: %d", this.number));
-        System.out.println(String.format("Balance: %2f", this.balance));
+        System.out.println(String.format("Balance: %.2f", this.balance));
     }
 }
